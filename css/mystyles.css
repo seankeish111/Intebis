@@ -343,14 +343,10 @@ li {
     color: rgb(66, 66, 66);
 }
 
-/* #navHome:hover {
 
-    background: rgb(143, 219, 140);
-    transition-duration: 1s;
-    transition-timing-function: ease;
-    transition-duration: 5s;
-} */
+/* nav bar size changed  */
 
-#navHome {
-    border-radius: ;
+#navBarStyle {
+
+    height: 53px;
 }
