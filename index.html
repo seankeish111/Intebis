@@ -17,7 +17,7 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <img  src="images/intelbiz_banner.png" alt="Intelbis">
+            <img  src="images/intelbiz_banner.png" alt="Bethany's Pie Shop Logo">
             <h1 >Intelbis</h1>
             <small>Digitizing your world</small>
         </div> <!-- end column -->
@@ -26,7 +26,7 @@
 </header>
 
       
-<nav class="navbar navbar-expand-sm navbar-light bg-light">
+<nav id="navBarStyle" class="navbar navbar-expand-sm navbar-light bg-light">
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -41,7 +41,7 @@
         <a class="nav-link" href="#" id="webservicesNav">Web Services</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" id="digitalmarketingNav">Digital Marketing</a>
+        <a class="nav-link" href="fruitPie.html" id="digitalmarketingNav">Digital Marketing</a>
       </li>
       <li class="nav-item">
         <a onClick ="slowLoad()" class="nav-link" href="about_us.html" id="aboutusNav">About Us</a>
@@ -56,8 +56,8 @@
   <aside id="leftmenu">
     <a href="index.html"> </a>
     <!-- <img class="logo" src="images/digital.jpeg"> -->
-    <header>
-      <h4 style="text-align: center;"> Our services </h4>
+    <header id="asideStyle">
+      <h4  style="text-align: center;"> Our services </h4>
     </header>
     <ul> 
       <li><a href="index.html">
@@ -72,37 +72,45 @@
             <div> Digital Marketing </div>
             </a> </li>  
   
-  
     </ul>
   </aside>
+        
 
+
+
+
+
+
+
+        <!-- slide show in the main start -->
+  <div>
+
+    <main>
+      <section>
+
+        <h2>
+          Digital solutions for SMEs
+        </h1>
 
         
-    <!-- testing the hero image    start    -->
-
-
-  <main>
-    <section>
-      <div class="hero-image">
-        <div class="hero-text"> 
-          <h1>
-            Test
-          </h1>
-          <p>
-            test p 
-          </p>
-          <button>
-            btn test
-          </button>
-        </div>
-      </div>
-
-    </section>
-
+        
+          
+  
+      </section>
       
-  </main>
+        
+    </main>
 
-   <!-- testing the hero image    start    -->
+
+  </div>
+
+          <!-- slide show in the main end -->
+          
+
+
+
+
+
   
   <footer>
   <div class="container mt-4 pt-3">
@@ -137,19 +145,68 @@
           <h2 class="footerFont">About Us</h2>
           <!-- <img src="" alt="logo" class="footerLogo"> -->
           <p>&copy; 2020 &bull; all rights reserved.</p>
-      </div> <!-- end column -->
-    </div><!-- end row -->
-  </div><!-- end container -->
-  </footer>
+      
+          
+        </div> 
+      </div><!-- end row -->
+    </div><!-- end container -->
+    </footer>
 
 
-</div>
   
 
 
 <!-- jQuery first then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 <script src="js/bootstrap.bundle.min.js"></script>    
+
+
+<!-- js for the slidehsow start  -->
+
+
+<script>
+
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+<!-- js for the slidehsow end  -->
+
+
     
       </body>
 </html>
+
+
+
+
+
