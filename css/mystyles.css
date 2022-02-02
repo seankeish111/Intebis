@@ -91,7 +91,7 @@ p {
 
 #aboutusNav:hover {
 
-    background: rgb(27, 168, 211);
+    background: rgb(89, 125, 136);
     transition-duration: 1s;
     transition-timing-function: ease;
 }
@@ -247,6 +247,7 @@ aside {
   to {opacity: 1}
 }
 
+<<<<<<< HEAD
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
@@ -300,3 +301,9 @@ aside {
 
 
 
+=======
+.footerFont {
+    color: rgb(48, 41, 41);
+}
+
+>>>>>>> chandu
