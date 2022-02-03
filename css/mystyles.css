@@ -39,40 +39,73 @@ p {
 
 }
 
-
-
+/* navigation bar start */
 
 #navHome {
     background-color: rgb(182, 218, 50);
     border-radius: -3000px;
-    color: rgba(84, 90, 26, 0.979);
+    
     box-shadow: 10px 10px 5px;
-    
-    
-    
+       
 }
 
 
+#navHome:hover {
 
+    background: rgb(191, 60, 0);
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-duration: 1s;
+
+}
 
 #applicationsNav {
 
     background-color: rgb(182, 218, 50);
     border-radius: -3000px;
     box-shadow: 10px 10px 5px;
-
-    
     
     
 }
 
-#digitalmarketingNav {
+#applicationsNav:hover {
+
+    background: rgb(191, 60, 0);
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+
+#customersNav {
     background-color: rgb(182, 218, 50);
     border-radius: -3000;
     box-shadow: 10px 10px 5px;
     
     
 }
+
+#customersNav:hover {
+
+    background: rgb(191, 60, 0);
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+
+/* navigation bar start */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #aboutusNav {
     background-color: rgb(182, 218, 50);
@@ -86,7 +119,7 @@ p {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 25px;
     
-    
+
 }
 
 #aboutusNav:hover {
@@ -97,29 +130,13 @@ p {
 }
 
 
-#navHome:hover {
-
-    background: rgb(191, 60, 0);
-    transition-duration: 1s;
-    transition-timing-function: ease;
-    transition-duration: 5s;
-}
-
-#webservicesNav:hover {
-
-    background: rgb(191, 60, 0);
-    transition-duration: 1s;
-    transition-timing-function: ease;
-}
 
 
 
-#digitalmarketingNav:hover {
 
-    background: rgb(191, 60, 0);
-    transition-duration: 1s;
-    transition-timing-function: ease;
-}
+
+
+
 
 
 
