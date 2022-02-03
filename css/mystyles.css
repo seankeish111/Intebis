@@ -55,7 +55,7 @@ p {
 
 
 
-#webservicesNav {
+#applicationsNav {
 
     background-color: rgb(182, 218, 50);
     border-radius: -3000px;
@@ -111,6 +111,8 @@ p {
     transition-duration: 1s;
     transition-timing-function: ease;
 }
+
+
 
 #digitalmarketingNav:hover {
 
@@ -328,7 +330,7 @@ background: linear-gradient(22deg, rgba(182,218,50,1) 0%, rgba(34,17,136,1) 0%, 
 
 #mainImg {
     height: 200px;
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
 
 }
