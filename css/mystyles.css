@@ -326,3 +326,9 @@ background: linear-gradient(22deg, rgba(182,218,50,1) 0%, rgba(34,17,136,1) 0%, 
     color: rgb(0,191,177,1);
 }
 
+#mainImg {
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
