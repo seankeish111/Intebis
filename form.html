@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"  href="css/bootstrap.min.css">
+    <link rel="stylesheet"  href="css/mystyles.css">
+    
+    <title>Intelbis</title>
+</head>
+    
+<body>
+<header>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <img  src="images/intelbiz_banner.png" alt="SolarMate">
+            <h1 >Solar Mate</h1>
+            <small>Digitizing your world id</small>
+        </div> <!-- end column -->
+    </div> <!-- end row -->
+</div> <!-- end container -->
+</header>
+
+
+<!-- navigation bar start -->
+      
+<nav id="navBarStyle" class="navbar navbar-expand-sm navbar-light bg-light">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav" >
+      <li class="nav-item active" >
+        <a class="nav-link"  href="index.html" class="homeHover"  id="navHome">Home</a>
+          
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="applicationsNav">Aplications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="fruitPie.html" id="customersNav">Customers</a>
+      </li>
+      <li class="nav-item">
+        <a onClick ="slowLoad()" class="nav-link" href="about_us.html" id="aboutusNav">About Us</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+<!-- navigation bar end -->
+
+
+<div id="sectionStyle">
+
+  <main >
+
+    <!-- form start -->
+
+
+    <!-- <section id="sectionStyle1"> -->
+
+        <section>
+
+            <div class="container">
+                <h4>Local Storage</h4>
+                <div class="p-4 mb-5 storageContainer">
+                    <div class="row mb-3">
+                        <div class="col-8">
+                            <input type="text" class="form-control mr-2" id="localData" />
+                        </div>
+                        <div class="col-4">
+                            <button class="btn setButton" type="button" onclick="setLocalStorage()">Set Local Data</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <button class="btn getButton" onclick="getLocalStorage()">Get Local Data</button>
+                            <button class="btn loopButton" onclick="loopThroughLocalStorage()">Get All Local Data</button>
+                        </div>
+                        <div class="col pl-5">
+                            <div class="getText mb-3" id="localStorageValue"></div>
+                            <div class="getLoopText" id="localStorageAllData"></div>
+                        </div>
+                    </div>
+                </div>
+                <h4>Session Storage</h4>
+                <div class="p-4 storageContainer">
+                    <div class="row mb-3">
+                        <div class="col-8">
+                            <input type="text" class="form-control mr-2" id="sessionData" />
+                        </div>
+                        <div class="col-4">
+                            <button class="btn setButton" type="button" onclick="setSessionStorage()">Set Session Data</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <button class="btn getButton" onclick="getSessionStorage()">Get Session Data</button>
+                            <button class="btn loopButton" onclick="loopThroughSessionStorage()">Get All Session Data</button>
+                        </div>
+                        <div class="col pl-5">
+                            <div class="getText mb-3" id="sessionStorageValue"></div>
+                            <div class="getLoopText" id="sessionStorageAllData"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+      
+
+      
+
+
+
+
+       
+
+        
+        
+       
+        
+
+    <!-- form end -->
+    <section>
+
+    </section>
+          
+  
+        
+    </main>  
+
+          
+
+
+
+
+
+  
+  <footer >
+
+    <div class="container mt-4 pt-3">
+      <div class="row">
+        <div class="col-12 col-md-6 col-xl-3">
+            <h2 id="text_footer">Address </h2>
+            <p> Melbourne <br>
+                Australia
+            </p>
+           
+            
+            
+        </div> <!-- end column -->
+          <div class="footerFont" class="col-12 col-md-6 col-xl-3">
+            <h2>Services</h2>
+            <ul>
+              <li>Web Development</li>
+              <li>CRM Implementation</li> 
+              <li>Digital Marketing</li>
+              <li>Tech Support</li>
+            </ul>
+        </div> <!-- end column -->
+          <div class="col-12 col-md-6 col-xl-3">
+            <h2>Social</h2>
+            <ul>
+            <li>Facebook</li>
+            <li>Twitter</li> 
+            <li>Instagram</li>
+            </ul>
+        </div> <!-- end column -->
+          <div  class="col-12 col-md-6 col-xl-3">
+            <h2 >About Us</h2>
+            <!-- <img src="" alt="logo" class="footerLogo"> -->
+            <p>&copy; 2020 &bull; all rights reserved.</p>
+        </div> <!-- end column -->
+      </div><!-- end row -->
+    </div><!-- end container -->
+    </footer>
+
+
+      
+     
+
+
+  
+
+
+<!-- jQuery first then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+<script src="js/bootstrap.bundle.min.js"></script>    
+
+
+
+
+
+<!-- js script for storage api start  -->
+
+
+
+
+
+<script type="text/javascript">
+    //#region //------------------------------------------- Set Storage
+    function setLocalStorage() {
+        let data = document.getElementById("localData").value;
+        localStorage.setItem("myLocalData", data);
+
+        document.getElementById("localData").value = ""; //-- clear out the field so we can enter a new value
+
+        //-- Adding some more data. Books!
+        let addData = ["Binary New World", "Infinite Loop", "The Hex Files", "Jane Error", "Catch 10110", "Lord of the Files"];
+
+        for (let i = 0; i < addData.length; i++) {
+            localStorage.setItem("Book " + (i + 1), addData[i]);
+        }
+    }
+
+    function setSessionStorage() {
+        let data = document.getElementById("sessionData").value;
+        sessionStorage.setItem("mySessionData", data);
+
+        document.getElementById("sessionData").value = ""; //-- clear out the field so we can enter a new value
+
+        //-- Adding some more data. Pizza, Yum!
+        let addData = ["Pepperoni", "Cheese", "Sausage", "Supreme", "Ham and Pineapple", "Vegetable"];
+
+        for (let i = 0; i < addData.length; i++) {
+            sessionStorage.setItem("Pizza Choice " + (i + 1), addData[i]);
+        }
+    }
+    //#endregion
+
+    //#region //------------------------------------------- Get Storage
+    function getLocalStorage() {
+        document.getElementById("localStorageValue").textContent = localStorage.getItem("myLocalData");
+    }
+
+    function getSessionStorage() {
+        document.getElementById("sessionStorageValue").textContent = sessionStorage.getItem("mySessionData");
+    }
+    //#endregion
+
+    //#region //------------------------------------------- Loop Through All Storage
+    function loopThroughLocalStorage() {
+        //document.getElementById("localStorageAllData").textContent = localStorage.key(2);
+        //document.getElementById("localStorageAllData").textContent = localStorage.getItem(localStorage.key(i));
+
+        let dataHtml = "";
+
+        for (var i = 0; i < localStorage.length; i++) {
+            dataHtml += "<p>" + localStorage.getItem(localStorage.key(i)) + "</p>";
+        }
+
+        document.getElementById("localStorageAllData").innerHTML = dataHtml;
+    }
+
+    function loopThroughSessionStorage() {
+        //document.getElementById("sessionStorageAllData").textContent = sessionStorage.key(2);
+        //document.getElementById("sessionStorageAllData").textContent = sessionStorage.getItem(sessionStorage.key(i));
+
+        let dataHtml = "";
+
+        for (var i = 0; i < sessionStorage.length; i++) {
+            dataHtml += "<p>" + sessionStorage.getItem(sessionStorage.key(i)) + "</p>";
+        }
+
+        document.getElementById("sessionStorageAllData").innerHTML = dataHtml;
+    }
+    //#endregion
+</script>
+
+
+<!-- js script for storage api end  -->
+
+    
+      </body>
+</html>
+
+
+
+
+
